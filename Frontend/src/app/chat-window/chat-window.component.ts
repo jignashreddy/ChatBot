@@ -35,7 +35,9 @@ export class ChatWindowComponent implements OnInit ,DoCheck{
       this.router.navigate(['login']);
 
     }
-    this.getMessages();
+    for(let i=0;i<10;i++){
+           this.getMessages();
+       }
     // setInterval(()=>{ this.getMessages(); 
 
     //       }, 2000);
